@@ -31,3 +31,246 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
  GET / 200 in 43ms
  ✓ Compiled in 143ms (334 modules)
  GET / 200 in 33ms
+ ✓ Compiled in 147ms (334 modules)
+ ✓ Compiled in 172ms (320 modules)
+ GET / 200 in 181ms
+ ✓ Compiled in 152ms (334 modules)
+ ✓ Compiled in 234ms (334 modules)
+ GET / 200 in 218ms
+ GET / 200 in 48ms
+ ✓ Compiled in 242ms (334 modules)
+ GET / 200 in 61ms
+ ✓ Compiled in 106ms (334 modules)
+ GET / 200 in 29ms
+ ✓ Compiled in 273ms (334 modules)
+ ✓ Compiled in 129ms (320 modules)
+ GET / 200 in 216ms
+ ✓ Compiled in 278ms (334 modules)
+ ✓ Compiled in 445ms (334 modules)
+ GET / 200 in 428ms
+ GET / 200 in 47ms
+ ✓ Compiled in 258ms (334 modules)
+ GET / 200 in 120ms
+ ✓ Compiled in 201ms (334 modules)
+ GET / 200 in 45ms
+ ✓ Compiled in 249ms (334 modules)
+ GET / 200 in 43ms
+ ✓ Compiled in 236ms (334 modules)
+ GET / 200 in 53ms
+ ✓ Compiled in 678ms (739 modules)
+ GET / 200 in 325ms
+ ✓ Compiled in 322ms (740 modules)
+ GET / 200 in 198ms
+ ⨯ [Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.] {
+  digest: '160320983'
+}
+ GET / 500 in 914ms
+ ✓ Compiled /favicon.ico in 259ms (422 modules)
+ GET /favicon.ico 200 in 440ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling /_not-found ...
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /_not-found in 1953ms (660 modules)
+ ⨯ [Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.] {
+  digest: '160320983'
+}
+ GET / 404 in 2376ms
+ GET / 500 in 2120ms
+ ⨯ [Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.] {
+  digest: '160320983'
+}
+ GET / 500 in 657ms
+ ✓ Compiled /favicon.ico in 217ms (369 modules)
+ GET /favicon.ico 200 in 380ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling / ...
+ ✓ Compiled / in 1382ms (704 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 2347ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /_error in 5.8s (1038 modules)
+ GET / 500 in 9948ms
+ GET / 500 in 7211ms
+ GET /favicon.ico 200 in 102ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 1449ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 3.3s (1034 modules)
+ GET / 200 in 210ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 2772ms
+ GET /favicon.ico 200 in 48ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 173ms
+ ✓ Compiled in 1632ms (1048 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 200 in 1975ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 1524ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 1142ms
+ GET /favicon.ico 200 in 24ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 1632ms (1034 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 1916ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 932ms
+ GET /favicon.ico 200 in 44ms
+ ⨯ ./src/components/Providers.tsx:4:1
+Module not found: Can't resolve '@tanstack/react-query-devtools'
+  2 |
+  3 | import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+> 4 | import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+    | ^
+  5 | import { useState } from 'react';
+  6 |
+  7 | export default function Providers({ children }: { children: React.ReactNode }) {
+
+https://nextjs.org/docs/messages/module-not-found
+ ✓ Compiled in 2.8s (1158 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 1058ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 835ms
+ GET /favicon.ico 200 in 50ms
+ ✓ Compiled in 303ms (622 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 809ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 915ms
+ GET /favicon.ico 200 in 20ms
+ ✓ Compiled in 339ms (622 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 781ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 796ms
+ GET /favicon.ico 200 in 29ms
+ ✓ Compiled in 228ms (622 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 754ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 904ms
+ GET /favicon.ico 200 in 7ms
+ ✓ Compiled in 281ms (622 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 718ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 812ms
+ GET /favicon.ico 200 in 18ms
+ ✓ Compiled in 242ms (622 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 748ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 895ms
+ GET /favicon.ico 200 in 30ms
+ ✓ Compiled in 575ms (622 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 708ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 847ms
+ GET /favicon.ico 200 in 16ms
+ ✓ Compiled in 999ms (622 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 638ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 893ms
+ GET /favicon.ico 200 in 13ms
+ ✓ Compiled in 427ms (622 modules)
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 733ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 897ms
+ GET /favicon.ico 200 in 17ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 705ms
+ GET /favicon.ico 200 in 26ms
+ ⨯ [Error: The default export is not a React Component in "/page"] {
+  page: '/'
+}
+ GET / 500 in 784ms
+ GET /favicon.ico 200 in 14ms
+[?25h
