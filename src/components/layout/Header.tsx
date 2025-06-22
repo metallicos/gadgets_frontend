@@ -1,15 +1,18 @@
 'use client';
 
-import Link from 'next/link';
+import {Link} from '@/i18n/routing';
 import { useState } from 'react';
-import { useAuthStore, useUIStore } from '@/store';
+import { useAuthStore } from '@/store';
 import { useCategoryTree } from '@/hooks/api';
+import {useTranslations} from 'next-intl';
+import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
 
 export default function Header() {
   const { user, isAuthenticated, logout } = useAuthStore();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
   const { data: categories } = useCategoryTree();
+  const t = useTranslations('common');
 
   const handleLogout = () => {
     logout();
@@ -36,14 +39,14 @@ export default function Header() {
                 href="/"
                 className="px-4 py-2 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 font-medium"
               >
-                Home
+                {t('home')}
               </Link>
               <div className="relative group">
                 <button
                   onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
                   className="px-4 py-2 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 font-medium flex items-center"
                 >
-                  Categories
+                  {t('categories')}
                   <svg className="ml-1 h-4 w-4 transform group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -54,7 +57,10 @@ export default function Header() {
                       {categories.map((category) => (
                         <Link
                           key={category.id}
-                          href={`/categories/${category.slug}`}
+                          href={{
+                            pathname: '/categories/[slug]',
+                            params: { slug: category.slug }
+                          }}
                           className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
                           onClick={() => setIsCategoriesOpen(false)}
                         >
@@ -70,24 +76,26 @@ export default function Header() {
                 href="/products"
                 className="px-4 py-2 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 font-medium"
               >
-                Products
+                {t('products')}
               </Link>
               <Link
                 href="/articles"
                 className="px-4 py-2 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 font-medium"
               >
-                Reviews
+                {t('articles')}
               </Link>
             </div>
           </div>
           
           <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
+            
             {isAuthenticated ? (
               <div className="flex items-center space-x-3">
                 <Link
                   href="/wishlist"
                   className="relative p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200"
-                  title="Wishlist"
+                  title={t('wishlist')}
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -162,13 +170,13 @@ export default function Header() {
                   href="/auth/login"
                   className="px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
                 >
-                  Sign in
+                  {t('login')}
                 </Link>
                 <Link
                   href="/auth/register"
                   className="px-6 py-2 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white rounded-lg font-semibold transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
-                  Get Started
+                  {t('register')}
                 </Link>
               </div>
             )}

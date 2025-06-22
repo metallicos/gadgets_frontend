@@ -1,0 +1,97 @@
+{
+  "common": {
+    "home": "Home",
+    "products": "Products",
+    "articles": "Articles",
+    "categories": "Categories",
+    "login": "Sign In",
+    "register": "Get Started",
+    "logout": "Sign Out",
+    "profile": "Profile",
+    "wishlist": "Wishlist",
+    "search": "Search",
+    "loading": "Loading...",
+    "viewAll": "View All",
+    "readMore": "Read More",
+    "buyNow": "Buy Now",
+    "viewDetails": "View Details",
+    "subscribe": "Subscribe",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "firstName": "First Name",
+    "lastName": "Last Name"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Smart Home Gadgets",
+      "subtitle": "Made Simple",
+      "description": "Discover the latest smart home technology, get expert reviews, and transform your living space with cutting-edge gadgets that make life easier, safer, and more enjoyable.",
+      "exploreButton": "Explore Gadgets",
+      "reviewsButton": "Read Reviews"
+    },
+    "stats": {
+      "gadgets": "Smart Gadgets",
+      "reviews": "Expert Reviews", 
+      "users": "Happy Users",
+      "support": "Support"
+    },
+    "categories": {
+      "title": "Popular Categories",
+      "description": "Explore our most popular smart home categories and find the perfect gadgets for every room.",
+      "smartLighting": {
+        "title": "Smart Lighting",
+        "description": "Illuminate your home with intelligent lighting solutions"
+      },
+      "homeSecurity": {
+        "title": "Home Security", 
+        "description": "Keep your home safe with advanced security systems"
+      },
+      "climateControl": {
+        "title": "Climate Control",
+        "description": "Smart thermostats and climate management"
+      },
+      "audioSystems": {
+        "title": "Audio Systems",
+        "description": "Premium sound systems and smart speakers"
+      },
+      "entertainment": {
+        "title": "Entertainment",
+        "description": "Smart TVs and streaming devices"
+      },
+      "kitchenTech": {
+        "title": "Kitchen Tech",
+        "description": "Smart appliances for modern kitchens"
+      }
+    },
+    "featuredProducts": {
+      "title": "Featured Products",
+      "description": "Handpicked smart home gadgets that our experts recommend for their innovation, quality, and value.",
+      "noProducts": "No Featured Products Yet",
+      "noProductsDescription": "Our curated selection of top smart home gadgets will appear here soon. Check back later!"
+    },
+    "featuredArticles": {
+      "title": "Expert Insights", 
+      "description": "Deep dives, buying guides, and expert reviews to help you make informed decisions about smart home technology.",
+      "comingSoon": "Coming Soon",
+      "comingSoonDescription": "Our expert reviews and buying guides are on the way. Stay tuned for in-depth analysis of the latest smart home tech!"
+    },
+    "newsletter": {
+      "title": "Never Miss a Smart Home Revolution",
+      "description": "Get exclusive access to the latest gadget reviews, early-bird deals, and insider tips delivered straight to your inbox.",
+      "placeholder": "Enter your email address",
+      "disclaimer": "Join 10,000+ smart home enthusiasts. Unsubscribe anytime."
+    }
+  },
+  "auth": {
+    "loginTitle": "Welcome Back",
+    "loginDescription": "Sign in to your account to access your wishlist and personalized recommendations.",
+    "registerTitle": "Join Our Community", 
+    "registerDescription": "Create an account to save your favorite products and get personalized recommendations.",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signUp": "Sign up",
+    "signIn": "Sign in"
+  }
+}

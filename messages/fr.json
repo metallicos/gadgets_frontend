@@ -1,0 +1,97 @@
+{
+  "common": {
+    "home": "Accueil",
+    "products": "Produits",
+    "articles": "Articles",
+    "categories": "Catégories",
+    "login": "Connexion",
+    "register": "Commencer",
+    "logout": "Déconnexion",
+    "profile": "Profil",
+    "wishlist": "Liste de souhaits",
+    "search": "Rechercher",
+    "loading": "Chargement...",
+    "viewAll": "Voir tout",
+    "readMore": "Lire plus",
+    "buyNow": "Acheter maintenant",
+    "viewDetails": "Voir les détails",
+    "subscribe": "S'abonner",
+    "email": "Email",
+    "password": "Mot de passe",
+    "name": "Nom",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Gadgets Maison Intelligente",
+      "subtitle": "Rendus Simples",
+      "description": "Découvrez les dernières technologies de maison intelligente, obtenez des avis d'experts et transformez votre espace de vie avec des gadgets de pointe qui rendent la vie plus facile, plus sûre et plus agréable.",
+      "exploreButton": "Explorer les Gadgets",
+      "reviewsButton": "Lire les Avis"
+    },
+    "stats": {
+      "gadgets": "Gadgets Intelligents",
+      "reviews": "Avis d'Experts",
+      "users": "Utilisateurs Satisfaits",
+      "support": "Support"
+    },
+    "categories": {
+      "title": "Catégories Populaires",
+      "description": "Explorez nos catégories de maison intelligente les plus populaires et trouvez les gadgets parfaits pour chaque pièce.",
+      "smartLighting": {
+        "title": "Éclairage Intelligent",
+        "description": "Illuminez votre maison avec des solutions d'éclairage intelligentes"
+      },
+      "homeSecurity": {
+        "title": "Sécurité Domestique",
+        "description": "Gardez votre maison en sécurité avec des systèmes de sécurité avancés"
+      },
+      "climateControl": {
+        "title": "Contrôle Climatique",
+        "description": "Thermostats intelligents et gestion du climat"
+      },
+      "audioSystems": {
+        "title": "Systèmes Audio",
+        "description": "Systèmes audio premium et haut-parleurs intelligents"
+      },
+      "entertainment": {
+        "title": "Divertissement",
+        "description": "Téléviseurs intelligents et appareils de streaming"
+      },
+      "kitchenTech": {
+        "title": "Tech Cuisine",
+        "description": "Appareils intelligents pour cuisines modernes"
+      }
+    },
+    "featuredProducts": {
+      "title": "Produits en Vedette",
+      "description": "Gadgets de maison intelligente soigneusement sélectionnés que nos experts recommandent pour leur innovation, qualité et valeur.",
+      "noProducts": "Aucun Produit en Vedette Encore",
+      "noProductsDescription": "Notre sélection de gadgets de maison intelligente de premier plan apparaîtra ici bientôt. Revenez plus tard!"
+    },
+    "featuredArticles": {
+      "title": "Aperçus d'Experts",
+      "description": "Analyses approfondies, guides d'achat et avis d'experts pour vous aider à prendre des décisions éclairées sur la technologie de maison intelligente.",
+      "comingSoon": "Bientôt Disponible",
+      "comingSoonDescription": "Nos avis d'experts et guides d'achat arrivent. Restez à l'écoute pour une analyse approfondie des dernières technologies de maison intelligente!"
+    },
+    "newsletter": {
+      "title": "Ne Manquez Jamais une Révolution de Maison Intelligente",
+      "description": "Obtenez un accès exclusif aux derniers avis de gadgets, offres précoces et conseils d'initiés livrés directement dans votre boîte de réception.",
+      "placeholder": "Entrez votre adresse email",
+      "disclaimer": "Rejoignez 10 000+ passionnés de maison intelligente. Désabonnez-vous à tout moment."
+    }
+  },
+  "auth": {
+    "loginTitle": "Bon Retour",
+    "loginDescription": "Connectez-vous à votre compte pour accéder à votre liste de souhaits et recommandations personnalisées.",
+    "registerTitle": "Rejoignez Notre Communauté",
+    "registerDescription": "Créez un compte pour sauvegarder vos produits favoris et obtenir des recommandations personnalisées.",
+    "forgotPassword": "Mot de passe oublié?",
+    "noAccount": "Vous n'avez pas de compte?",
+    "hasAccount": "Vous avez déjà un compte?",
+    "signUp": "S'inscrire",
+    "signIn": "Se connecter"
+  }
+}
