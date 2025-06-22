@@ -2,6 +2,8 @@ export interface User {
   id: number;
   email: string;
   name: string;
+  firstname?: string;
+  lastname?: string;
   avatar?: string;
   roles: string[];
   newsletterOptIn: boolean;

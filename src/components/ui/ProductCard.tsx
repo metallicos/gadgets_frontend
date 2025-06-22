@@ -41,21 +41,23 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden">
-      <div className="relative h-64 overflow-hidden">
+    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden card-hover border border-gray-100">
+      <div className="relative h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
         <Image
           src={product.imageUrl}
           alt={product.title}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-200"
+          className="object-cover group-hover:scale-110 transition-transform duration-500"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        
         <button
           onClick={handleWishlistToggle}
-          className="absolute top-3 right-3 p-2 rounded-full bg-white shadow-sm hover:shadow-md transition-shadow"
+          className="absolute top-4 right-4 p-2.5 rounded-full bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110"
         >
           <svg
-            className={`h-5 w-5 ${inWishlist ? 'text-red-500 fill-current' : 'text-gray-400'}`}
-            fill="none"
+            className={`h-5 w-5 ${inWishlist ? 'text-red-500 fill-current' : 'text-gray-600'}`}
+            fill={inWishlist ? 'currentColor' : 'none'}
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
@@ -67,66 +69,64 @@ export default function ProductCard({ product }: ProductCardProps) {
             />
           </svg>
         </button>
-        {!product.isActive && (
-          <div className="absolute top-3 left-3 px-2 py-1 bg-red-500 text-white text-xs rounded">
+        
+        {!product.isActive ? (
+          <div className="absolute top-4 left-4 px-3 py-1.5 bg-red-500 text-white text-xs font-semibold rounded-full">
             Out of Stock
+          </div>
+        ) : (
+          <div className="absolute top-4 left-4 px-3 py-1.5 bg-gradient-to-r from-blue-500 to-green-500 text-white text-xs font-semibold rounded-full">
+            {product.category.name}
           </div>
         )}
       </div>
       
-      <div className="p-4">
-        <div className="flex items-start justify-between">
-          <div className="flex-1">
-            <Link href={`/products/${product.id}`}>
-              <h3 className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors line-clamp-2">
-                {product.title}
-              </h3>
-            </Link>
-            <p className="mt-1 text-sm text-gray-600 line-clamp-2">
-              {truncateText(product.description, 100)}
-            </p>
-          </div>
-        </div>
+      <div className="p-6">
+        <Link href={`/products/${product.id}`} className="block group">
+          <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 line-clamp-2 mb-2">
+            {product.title}
+          </h3>
+          <p className="text-sm text-gray-600 line-clamp-2 mb-4">
+            {truncateText(product.description, 100)}
+          </p>
+        </Link>
         
-        <div className="mt-3 flex items-center">
-          <div className="flex items-center">
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center space-x-1">
             {renderStars(Math.round(product.rating))}
-            <span className="ml-1 text-sm text-gray-500">({product.rating})</span>
-          </div>
-          <span className="ml-2 text-sm text-gray-500">
-            {product.reviews?.length || 0} reviews
-          </span>
-        </div>
-        
-        <div className="mt-4 flex items-center justify-between">
-          <div className="flex items-center">
-            <span className="text-2xl font-bold text-gray-900">
-              {formatPrice(product.price)}
+            <span className="ml-2 text-sm font-medium text-gray-700">
+              {product.rating}
+            </span>
+            <span className="text-sm text-gray-500">
+              ({product.reviews?.length || 0})
             </span>
           </div>
-          <div className="flex space-x-2">
-            <Link
-              href={`/products/${product.id}`}
-              className="px-3 py-1.5 text-sm font-medium text-blue-600 hover:text-blue-700 border border-blue-600 hover:border-blue-700 rounded-md transition-colors"
-            >
-              View Details
-            </Link>
-            <a
-              href={product.affiliateLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3 py-1.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors"
-            >
-              Buy Now
-            </a>
-          </div>
         </div>
         
-        <div className="mt-3 flex items-center justify-between text-sm text-gray-500">
-          <span>SKU: {product.sku}</span>
-          <span className="text-xs bg-gray-100 px-2 py-1 rounded">
-            {product.category.name}
+        <div className="flex items-center justify-between mb-4">
+          <span className="text-2xl font-bold text-gray-900">
+            {formatPrice(product.price)}
           </span>
+          <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full">
+            SKU: {product.sku}
+          </span>
+        </div>
+        
+        <div className="flex space-x-2">
+          <Link
+            href={`/products/${product.id}`}
+            className="flex-1 px-4 py-2.5 text-sm font-semibold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-all duration-200 text-center hover:scale-105"
+          >
+            View Details
+          </Link>
+          <a
+            href={product.affiliateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 rounded-xl transition-all duration-200 text-center hover:scale-105 shadow-lg"
+          >
+            Buy Now
+          </a>
         </div>
       </div>
     </div>

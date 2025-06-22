@@ -13,143 +13,292 @@ export default function HomePage() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-24 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27 width=%2732%27 height=%2732%27 fill=%27none%27 stroke=%27%23ffffff15%27%3e%3cpath d=%27m0 2 30 30%27/%3e%3cpath d=%27m2 0 30 30%27/%3e%3c/svg%3e')] opacity-20"></div>
+        
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Discover Amazing Home Gadgets
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-blue-100">
-              Get expert reviews, detailed comparisons, and find the perfect gadgets for your home.
-              We help you make informed decisions with honest reviews and practical advice.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link
-                href="/products"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Browse Products
-              </Link>
-              <Link
-                href="/articles"
-                className="text-sm font-semibold leading-6 text-white hover:text-blue-100"
-              >
-                Read Articles <span aria-hidden="true">→</span>
-              </Link>
+            {/* Floating Icons Animation */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <div className="absolute top-20 left-10 animate-bounce delay-300">
+                <div className="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                  📱
+                </div>
+              </div>
+              <div className="absolute top-32 right-16 animate-bounce delay-700">
+                <div className="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center">
+                  🏠
+                </div>
+              </div>
+              <div className="absolute bottom-32 left-20 animate-bounce delay-1000">
+                <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                  💡
+                </div>
+              </div>
+              <div className="absolute bottom-40 right-8 animate-bounce delay-500">
+                <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center">
+                  🔌
+                </div>
+              </div>
+            </div>
+
+            <div className="animate-fade-in">
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                Smart <span className="gradient-text">Home Gadgets</span>
+                <br />
+                <span className="text-3xl md:text-5xl text-blue-200">Made Simple</span>
+              </h1>
+              <p className="mt-6 text-xl leading-8 text-blue-100 max-w-3xl mx-auto">
+                Discover the latest smart home technology, get expert reviews, and transform your living space 
+                with cutting-edge gadgets that make life easier, safer, and more enjoyable.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link
+                  href="/products"
+                  className="group relative px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 min-w-[200px]"
+                >
+                  <span className="relative z-10">Explore Gadgets</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </Link>
+                <Link
+                  href="/articles"
+                  className="group px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl backdrop-blur-sm hover:bg-white/10 transition-all duration-300 min-w-[200px]"
+                >
+                  <span>Read Reviews</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Products */}
+      {/* Stats Section */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900">Featured Products</h2>
-              <p className="mt-2 text-gray-600">
-                Handpicked gadgets that we highly recommend
-              </p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">1000+</div>
+              <div className="text-gray-600">Smart Gadgets</div>
             </div>
-            <Link
-              href="/products"
-              className="text-blue-600 hover:text-blue-700 font-medium"
-            >
-              View All Products →
-            </Link>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-green-600 mb-2">500+</div>
+              <div className="text-gray-600">Expert Reviews</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-purple-600 mb-2">50k+</div>
+              <div className="text-gray-600">Happy Users</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-orange-600 mb-2">24/7</div>
+              <div className="text-gray-600">Support</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Categories Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Popular Categories</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Explore our most popular smart home categories and find the perfect gadgets for every room.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { icon: '💡', title: 'Smart Lighting', desc: 'Illuminate your home with intelligent lighting solutions', color: 'bg-yellow-500' },
+              { icon: '🏠', title: 'Home Security', desc: 'Keep your home safe with advanced security systems', color: 'bg-red-500' },
+              { icon: '🌡️', title: 'Climate Control', desc: 'Smart thermostats and climate management', color: 'bg-blue-500' },
+              { icon: '🔊', title: 'Audio Systems', desc: 'Premium sound systems and smart speakers', color: 'bg-purple-500' },
+              { icon: '📺', title: 'Entertainment', desc: 'Smart TVs and streaming devices', color: 'bg-green-500' },
+              { icon: '🍳', title: 'Kitchen Tech', desc: 'Smart appliances for modern kitchens', color: 'bg-orange-500' },
+            ].map((category, index) => (
+              <div key={index} className="group cursor-pointer">
+                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 card-hover">
+                  <div className={`w-16 h-16 ${category.color} rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    {category.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{category.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{category.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Products */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Products</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Handpicked smart home gadgets that our experts recommend for their innovation, quality, and value.
+            </p>
           </div>
           
           {productsLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {Array.from({ length: 8 }).map((_, i) => (
-                <div key={i} className="bg-gray-200 rounded-lg h-80 animate-pulse"></div>
+                <div key={i} className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-96 animate-pulse">
+                  <div className="p-6 space-y-4">
+                    <div className="h-48 bg-gray-300 rounded-xl"></div>
+                    <div className="h-4 bg-gray-300 rounded w-3/4"></div>
+                    <div className="h-4 bg-gray-300 rounded w-1/2"></div>
+                  </div>
+                </div>
               ))}
             </div>
           ) : featuredProducts && featuredProducts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {featuredProducts.slice(0, 8).map((product) => (
-                <ProductCard key={product.id} product={product} />
+                <div key={product.id} className="group">
+                  <ProductCard product={product} />
+                </div>
               ))}
             </div>
           ) : (
-            <div className="text-center py-12">
-              <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-              </svg>
-              <h3 className="mt-2 text-sm font-medium text-gray-900">No featured products</h3>
-              <p className="mt-1 text-sm text-gray-500">Featured products will appear here once added.</p>
+            <div className="text-center py-20">
+              <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-12 h-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">No Featured Products Yet</h3>
+              <p className="text-gray-600 mb-8 max-w-md mx-auto">
+                Our curated selection of top smart home gadgets will appear here soon. Check back later!
+              </p>
+              <Link
+                href="/products"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors duration-200"
+              >
+                Browse All Products
+              </Link>
+            </div>
+          )}
+          
+          {/* View All Button */}
+          {featuredProducts && featuredProducts.length > 0 && (
+            <div className="text-center mt-12">
+              <Link
+                href="/products"
+                className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                View All Products
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
           )}
         </div>
       </section>
 
       {/* Featured Articles */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900">Latest Articles</h2>
-              <p className="mt-2 text-gray-600">
-                Expert insights and buying guides for home gadgets
-              </p>
-            </div>
-            <Link
-              href="/articles"
-              className="text-blue-600 hover:text-blue-700 font-medium"
-            >
-              View All Articles →
-            </Link>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Expert Insights</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Deep dives, buying guides, and expert reviews to help you make informed decisions about smart home technology.
+            </p>
           </div>
           
           {articlesLoading ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="bg-gray-200 rounded-lg h-80 animate-pulse"></div>
+                <div key={i} className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <div className="h-48 bg-gradient-to-br from-gray-200 to-gray-300 animate-pulse"></div>
+                  <div className="p-6 space-y-4">
+                    <div className="h-4 bg-gray-200 rounded w-3/4 animate-pulse"></div>
+                    <div className="h-4 bg-gray-200 rounded w-1/2 animate-pulse"></div>
+                    <div className="h-3 bg-gray-200 rounded w-full animate-pulse"></div>
+                    <div className="h-3 bg-gray-200 rounded w-2/3 animate-pulse"></div>
+                  </div>
+                </div>
               ))}
             </div>
           ) : featuredArticles && featuredArticles.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featuredArticles.slice(0, 6).map((article) => (
-                <ArticleCard key={article.id} article={article} />
+                <div key={article.id} className="group">
+                  <ArticleCard article={article} />
+                </div>
               ))}
             </div>
           ) : (
-            <div className="text-center py-12">
-              <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              <h3 className="mt-2 text-sm font-medium text-gray-900">No featured articles</h3>
-              <p className="mt-1 text-sm text-gray-500">Featured articles will appear here once published.</p>
+            <div className="text-center py-20">
+              <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-12 h-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Coming Soon</h3>
+              <p className="text-gray-600 mb-8 max-w-md mx-auto">
+                Our expert reviews and buying guides are on the way. Stay tuned for in-depth analysis of the latest smart home tech!
+              </p>
+              <Link
+                href="/articles"
+                className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition-colors duration-200"
+              >
+                Explore Articles
+              </Link>
+            </div>
+          )}
+          
+          {/* View All Button */}
+          {featuredArticles && featuredArticles.length > 0 && (
+            <div className="text-center mt-12">
+              <Link
+                href="/articles"
+                className="inline-flex items-center px-8 py-4 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Read All Articles
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
           )}
         </div>
       </section>
 
       {/* Newsletter CTA */}
-      <section className="bg-blue-600 py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-white">
-              Stay Updated with Latest Gadgets
+      <section className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 py-20 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27 width=%2732%27 height=%2732%27 fill=%27none%27 stroke=%27%23ffffff10%27%3e%3cpath d=%27m0 2 30 30%27/%3e%3cpath d=%27m2 0 30 30%27/%3e%3c/svg%3e')] opacity-30"></div>
+        
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <div className="glass rounded-3xl p-12">
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Never Miss a Smart Home Revolution
             </h2>
-            <p className="mt-4 text-lg text-blue-100">
-              Subscribe to our newsletter and never miss a review or deal.
+            <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+              Get exclusive access to the latest gadget reviews, early-bird deals, and insider tips delivered straight to your inbox.
             </p>
-            <div className="mt-8 flex justify-center">
-              <div className="flex w-full max-w-md">
+            
+            <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+              <div className="flex-1">
                 <input
                   type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-l-md border-0 text-gray-900 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600"
+                  placeholder="Enter your email address"
+                  className="w-full px-6 py-4 rounded-xl border-0 text-gray-900 shadow-lg placeholder:text-gray-500 focus:ring-4 focus:ring-white/30 focus:outline-none text-lg"
                 />
-                <button
-                  type="button"
-                  className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-r-md hover:bg-gray-50 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600"
-                >
-                  Subscribe
-                </button>
               </div>
+              <button
+                type="button"
+                className="px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 focus:ring-4 focus:ring-white/30 focus:outline-none transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+              >
+                Subscribe
+              </button>
             </div>
+            
+            <p className="text-blue-200 text-sm mt-6">
+              Join 10,000+ smart home enthusiasts. Unsubscribe anytime.
+            </p>
           </div>
         </div>
       </section>
