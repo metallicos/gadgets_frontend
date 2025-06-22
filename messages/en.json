@@ -83,6 +83,32 @@
       "disclaimer": "Join 10,000+ smart home enthusiasts. Unsubscribe anytime."
     }
   },
+  "products": {
+    "title": "Smart Home Products",
+    "description": "Discover amazing home gadgets with expert reviews and ratings",
+    "noProducts": "No Products Found",
+    "noProductsDescription": "We couldn't find any products matching your criteria. Try adjusting your filters or search terms.",
+    "search": "Search products...",
+    "allCategories": "All Categories",
+    "sortBy": "Sort by",
+    "sortOptions": {
+      "newest": "Newest First",
+      "oldest": "Oldest First", 
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low",
+      "rating": "Highest Rated"
+    }
+  },
+  "articles": {
+    "title": "Smart Home Articles",
+    "description": "Expert insights, buying guides, and reviews to help you make informed decisions",
+    "noArticles": "No Articles Found",
+    "noArticlesDescription": "We couldn't find any articles matching your criteria. Try adjusting your filters or search terms.",
+    "search": "Search articles...",
+    "allCategories": "All Categories",
+    "readingTime": "min read",
+    "publishedOn": "Published on"
+  },
   "auth": {
     "loginTitle": "Welcome Back",
     "loginDescription": "Sign in to your account to access your wishlist and personalized recommendations.",

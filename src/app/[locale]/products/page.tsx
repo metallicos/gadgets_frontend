@@ -39,9 +39,9 @@ export default function ProductsPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-3xl font-bold text-gray-900">Products</h1>
+            <h1 className="text-3xl font-bold text-gray-900">{tCommon('products')}</h1>
             <p className="mt-2 text-gray-600">
-              Discover amazing home gadgets with expert reviews and ratings
+              {t('description')}
             </p>
           </div>
 

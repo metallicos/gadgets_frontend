@@ -83,6 +83,32 @@
       "disclaimer": "Rejoignez 10 000+ passionnés de maison intelligente. Désabonnez-vous à tout moment."
     }
   },
+  "products": {
+    "title": "Produits Maison Intelligente",
+    "description": "Découvrez d'incroyables gadgets pour la maison avec des avis et des notes d'experts",
+    "noProducts": "Aucun Produit Trouvé",
+    "noProductsDescription": "Nous n'avons trouvé aucun produit correspondant à vos critères. Essayez d'ajuster vos filtres ou termes de recherche.",
+    "search": "Rechercher des produits...",
+    "allCategories": "Toutes les Catégories",
+    "sortBy": "Trier par",
+    "sortOptions": {
+      "newest": "Plus Récent d'Abord",
+      "oldest": "Plus Ancien d'Abord",
+      "priceAsc": "Prix: Du Plus Bas au Plus Haut",
+      "priceDesc": "Prix: Du Plus Haut au Plus Bas",
+      "rating": "Mieux Noté"
+    }
+  },
+  "articles": {
+    "title": "Articles Maison Intelligente",
+    "description": "Insights d'experts, guides d'achat et avis pour vous aider à prendre des décisions éclairées",
+    "noArticles": "Aucun Article Trouvé",
+    "noArticlesDescription": "Nous n'avons trouvé aucun article correspondant à vos critères. Essayez d'ajuster vos filtres ou termes de recherche.",
+    "search": "Rechercher des articles...",
+    "allCategories": "Toutes les Catégories",
+    "readingTime": "min de lecture",
+    "publishedOn": "Publié le"
+  },
   "auth": {
     "loginTitle": "Bon Retour",
     "loginDescription": "Connectez-vous à votre compte pour accéder à votre liste de souhaits et recommandations personnalisées.",
